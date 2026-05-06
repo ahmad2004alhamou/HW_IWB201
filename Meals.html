@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>الوجبات </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="home.html">الصفحة الرئيسية</a>
+        <a href="AboutUs.html">حول المطعم</a>
+        <a href="Meals.html">الوجبات</a>
+</nav>
+
+<div class="every">
+
+  <h1>قائمة الوجبات المتوفرة</h1>
+  <p>اختر الوجبات التي ترغب بها ثم اضغط <strong>متابعة</strong>.</p>
+
+  <table id="mealsTable">
+    <thead>
+      <tr>
+        <th>الرمز</th>
+        <th>الوجبة</th>
+        <th>السعر</th>
+        <th>إظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- 1 -->
+      <tr class="meal-row">
+        <td class="col-code">SF-001</td>
+        <td class="col-name">شاورما دجاج</td>
+        <td class="col-price" data-price="20000">20,000 ل.س</td>
+        <td><button type="button" class="toggle-btn" onclick="tfasel(this)">عرض التفاصيل</button></td>
+        <td><input type="checkbox" class="meal-check" /></td>
+      </tr>
+      <tr class="details-row" style="display:none;">
+        <td colspan="5">
+          <strong>تصنيف الطعام:</strong> مأكولات غربية&nbsp;|&nbsp;
+          <strong>المطبخ:</strong> تركي<br />
+          <strong>المكونات:</strong>
+          <ul>
+            <li> دجاج الشاورما </li>
+            <li>كريم الثوم المحضر على الطريقة الشامية</li>
+            <li> مخلل</li>
+           
+          </ul>
+         
+        </td>
+      </tr>
+
+      <!-- 2 -->
+      <tr class="meal-row">
+        <td class="col-code">SF-002</td>
+        <td class="col-name">صحن فلافل مع سلطة </td>
+        <td class="col-price" data-price="15000">15,000 ل.س</td>
+        <td><button type="button" class="toggle-btn" onclick="tfasel(this)">عرض التفاصيل</button></td>
+        <td><input type="checkbox" class="meal-check" /></td>
+      </tr>
+      <tr class="details-row" style="display:none;">
+        <td colspan="5">
+          <strong>تصنيف الطعام:</strong> مقبلات&nbsp;|&nbsp;
+          <strong>المطبخ:</strong> سوري_شامي<br />
+          <strong>المكونات:</strong>
+          <ul>
+            <li>15 قرص فلافل </li>
+            <li>صحن سلطة من اختيارك</li>
+            <li>طحينية على جنب</li>
+
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 3 -->
+      <tr class="meal-row">
+        <td class="col-code">SF-003</td>
+        <td class="col-name">كبة مشوية</td>
+        <td class="col-price" data-price="50000">50,000 ل.س</td>
+        <td><button type="button" class="toggle-btn" onclick="tfasel(this)">عرض التفاصيل</button></td>
+        <td><input type="checkbox" class="meal-check" /></td>
+      </tr>
+      <tr class="details-row" style="display:none;">
+        <td colspan="5">
+          <strong>تصنيف الطعام:</strong> كبة&nbsp;|&nbsp;
+          <strong>المطبخ:</strong>حلبي<br />
+          <strong>المكونات:</strong>
+          <ul>
+            <li>10 اقراص من الكبة المشوية</li>
+            <li>تبولة </li>
+            <li>دبس رمان و شطة</li>
+
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 4 -->
+      <tr class="meal-row">
+        <td class="col-code">SF-004</td>
+        <td class="col-name">فروج مشوي على الفحم</td>
+        <td class="col-price" data-price="90000">90,000 ل.س</td>
+        <td><button type="button" class="toggle-btn" onclick="tfasel(this)">عرض التفاصيل</button></td>
+        <td><input type="checkbox" class="meal-check" /></td>
+      </tr>
+      <tr class="details-row" style="display:none;">
+        <td colspan="5">
+          <strong>تصنيف الطعام:</strong> فروج مشوي&nbsp;|&nbsp;
+          <strong>المطبخ:</strong> الشامي<br />
+          <strong>المكونات:</strong>
+          <ul>
+            <li>فروج مشوي على الفحص</li>
+            <li>خبز صاج طازج.</li>
+            <li>صلصة طحينة وثوم.</li>
+            <li>بطاطا مقلية وخيار مخلل.</li>
+            <li>بندورة وبصل ومعدنوس.</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- 5 -->
+      <tr class="meal-row">
+        <td class="col-code">SF-005</td>
+        <td class="col-name">مشاوي</td>
+        <td class="col-price" data-price="100000">100,000 ل.س</td>
+        <td><button type="button" class="toggle-btn" onclick="tfasel(this)">عرض التفاصيل</button></td>
+        <td><input type="checkbox" class="meal-check" /></td>
+      </tr>
+      <tr class="details-row" style="display:none;">
+        <td colspan="5">
+          <strong>تصنيف الطعام:</strong> مشاوي &nbsp;|&nbsp;
+          <strong>المطبخ:</strong> الشامي<br />
+          <strong>المكونات:</strong>
+          <ul>
+            <li>كباب حلبي مشوي.</li>
+            <li>شيش طاووق على الفحم.</li>
+            <li>كستلاتة لحم غنم.</li>
+            <li>أرز بالشعيرية.</li>
+            <li>خبز عربي وسلطات متنوعة.</li>
+            <li>صلصة الحمص والمتبل والبابا غنوج.</li>
+          </ul>
+        </td>
+      </tr>
+
+
+
+    </tbody>
+  </table>
+
+  <br />
+  <button type="button" class="btn-primary" onclick="mtab3a()">متابعة</button>
+
+  <!-- ─── نموذج الطلب ─── -->
+  <div id="formSection" class="data" style="display:none;">
+
+    <h2>نموذج طلب الوجبات</h2>
+
+    <p style="color:#666;font-size:13px;">
+      رقم الحساب المصرفي إلزامي. باقي الحقول اختيارية.
+    </p>
+
+    <form id="orderForm" onsubmit="return Order()" novalidate>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fullName">Full Name (اسمان بالإنكليزية)</label>
+          <input type="text" id="fullName" placeholder="e.g.  Mohammad Khair" dir="ltr" />
+          <span class="error-msg" id="fullNameError" style="display:none;">الاسم بالإنكليزية فقط، اسمان بينهما فراغ واحد</span>
+        </div>
+
+        <div class="form-group">
+          <label for="bankAccount">* رقم الحساب المصرفي (6 خانات)</label>
+          <input type="text" id="bankAccount" placeholder="055555" maxlength="6" dir="ltr" />
+          <span class="error-msg" id="bankAccountError" style="display:none;">رقم الحساب إلزامي — 6 خانات أرقام فقط</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="orderDate">تاريخ الطلب (dd-mm-yyyy)</label>
+          <input type="text" id="orderDate" placeholder="26-04-2026" maxlength="10" dir="ltr" />
+          <span class="error-msg" id="orderDateError" style="display:none;">الصيغة الصحيحة: dd-mm-yyyy</span>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">رقم الموبايل (Syriatel / MTN)</label>
+          <input type="tel" id="mobile" placeholder="0944123456" maxlength="10" dir="ltr" />
+          <span class="error-msg" id="mobileError" style="display:none;">يجب أن يطابق أرقام Syriatel أو MTN</span>
+        </div>
+      </div>
+
+      <br />
+      <button type="submit" class="btn-primary">إرسال</button>
+      &nbsp;
+      <button type="button" class="btn-secondary" onclick="exitform()">إلغاء</button>
+
+    </form>
+  </div><!-- /formSection -->
+
+</div><!-- /page -->
+
+<!-- ─── نافذة النجاح ─── -->
+<div id="successModal" class="modal-overlay" style="display:none;">
+  <div class="modal-box">
+    <h2>تم إرسال الطلب بنجاح</h2>
+
+    <h3>الوجبات المختارة</h3>
+    <ul id="modalMealsList"></ul>
+
+    <h3>الفاتورة</h3>
+    <p>المبلغ الإجمالي: <span id="modalSubtotal" dir="ltr"></span></p>
+    <p>الضريبة (10%): <span id="modalTax" dir="ltr"></span></p>
+    <p><strong>المبلغ الصافي: <span id="modalNet" dir="ltr"></span></strong></p>
+
+    <h3>معلومات مقدم الطلب</h3>
+    <p>الاسم: <span id="modalName" dir="ltr"></span></p>
+    <p>رقم الحساب: <span id="modalBank" dir="ltr"></span></p>
+    <p>التاريخ: <span id="modalDate" dir="ltr"></span></p>
+    <p>الموبايل: <span id="modalMobile" dir="ltr"></span></p>
+
+    <button type="button" class="btn-primary" onclick="exitmodel()">إغلاق</button>
+  </div>
+</div>
+
+<footer>© 2026 مطعم الشام — جميع الحقوق محفوظة</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="myFunctions.js"></script>
+</body>
+</html>

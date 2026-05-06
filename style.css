@@ -1,0 +1,136 @@
+/* ====== الصفحة العامة ====== */
+body {
+    background-color: #E5E7EB; 
+    font-family: Arial, sans-serif;
+    color: #2C2C2C;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ====== الـ Nav ====== */
+nav {
+    background-color: #4A5C6A; 
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav ul li a:hover {
+    color: #D1D5DB; 
+}
+
+/* ====== الجدول ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+th {
+    background-color: #4A5C6A; 
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #D1D5DB;
+    text-align: center;
+}
+
+
+    
+
+    nav {
+    background-color: #4A5C6A; 
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    background-color: #E5E7EB; 
+    color: #4A5C6A;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #D1D5DB;
+    color: #2F3A45;
+    transform: translateY(-2px);
+}
+
+nav a:active {
+    transform: scale(0.97);
+}
+
+.every{
+    width: 70%;             
+    margin: 30px auto;      
+    background: #FFFFFF;    
+    padding: 75px;
+    border-radius: 12px;     
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+}
+.tt{
+    
+        background-color: #4A5C6A; 
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+.data {
+  margin-top: 30px;
+  padding: 20px;
+  background: #e8f0fd;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}/* ── النافذة المنبثقة ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-x: auto;
+}
+
